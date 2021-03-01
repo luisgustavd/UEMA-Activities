@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Eventos em JavaScript Atividade</title>
+        <meta charset="utf-8"/>
+        <h3>Nesta página temos a realização de eventos com funções de mudar a cor de uma div e dar
+            um alerta na página ao clicar no botão "Clique Aqui". 
+            Usa-se três funções conhecidas do 
+            JavaScript para isso,'onmouseover', 'onmouseout' e 'onclick'.
+            <br>
+            1.'onmouseover' = utilizado para mudar a cor quando o mouse for passado em cima da div indicada
+            <br>
+            2.'onmouseout' = utilizado para mudar a cor quando o mouse sair de cima da div indicada
+            <br>
+            3.'onclick' = indica um alerta ao clicar um botão 
+        </h3>
+        <style>
+            #dv1{
+                width: 200px;
+                height: 200px;
+                border: 1px solid #000;
+            }
+        </style>
+        <script>
+            function mudacor(obj,cor){
+                obj.style.backgroundColor=cor;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="dv1" onmouseover="mudacor(this,'#f00')" onmouseout="mudacor(this,'#fff')"></div>
+        <br>
+        <button onclick="alert('Você realizou um evento na página!')">Clique Aqui</button>
+    </body>
+</html>
